@@ -19,6 +19,17 @@ int main()
         tabuleiro[1][n] = 3;
     }
 
+    for (int n = 4; n < 7; n++){
+
+        tabuleiro[n][n-3] = 3;
+    }
+
+    for (int n = 6; n < 9; n++){
+
+        tabuleiro[n][5-n] = 3;
+    
+    }
+
     for (int n = 3; n < 6; n++)
     {
         tabuleiro[n][7] = 3;
@@ -35,7 +46,7 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
-        printf("%2d ", i);
+        printf("%2d ", i + 1);
 
         for (int j = 0; j < 10; j++)
         {
